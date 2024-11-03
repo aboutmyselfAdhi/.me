@@ -6,13 +6,16 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f7f9fc;
+    background-color: #f4f4f9;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
+}
+header h1, section h2 {
+    font-family: 'Inter', sans-serif; /* Ensure headings use Inter font */
 }
 
 .container {
@@ -58,3 +61,28 @@ footer {
     font-size: 0.9rem;
     color: #888;
 }
+.about p, .contact p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #555;
+    transition: color 0.3s ease; /* Add this for a smooth color transition */
+}
+
+.about p:hover, .contact p:hover {
+    color: #007acc; /* Change to a slightly different color when hovering */
+}
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #005f99;
+}
+
